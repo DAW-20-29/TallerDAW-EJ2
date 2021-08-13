@@ -22,7 +22,8 @@ function tirarDados() {
     var valorDado2 = Math.floor(1 + Math.random() * 6);
     var source2 = "./IMGS/dado" + valorDado2 + ".png";
     document.querySelector("#img-activa2").setAttribute("src", source2);
-
+    
+    var ValorTotal = valorDado1 + valorDado2;
 }
 //Funcion de reiniciar, los intentos vuelven a 0 y se vuelve a mostrar la imagen del dado número uno.
 function reiniciar() {
@@ -66,7 +67,7 @@ function User(username, puntaje, sshora){
 }
 
 //Matriz para guardar el puntaje de cada intento y la hora en que este se realizó
-let Posicion = new User(2);
+let Posicion = new Arrays(2);
 
 Posicion[0] = {username : 1, 'puntaje' : puntaje , 'Hora: ' : sshora};
 Posicion[1] = {username : 2, 'puntaje' : puntaje , 'Hora: ' : sshora};
